@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PaisesService } from './paises.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PAISES';
+
+  paises:  any[];
+
+  constructor (
+    private paisesService: PaisesService)
+  {}
+
+  async ngOnInit() {
+    this.paises = await this.paisesService.getPaises();
+    console.log(this.paises);
+
+  }
 }

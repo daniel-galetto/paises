@@ -1,0 +1,29 @@
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 150px;
+    
+}
+
+.paises {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.pais {
+    width: 150px;
+    border: 1px solid black;
+    margin: 5px;
+    padding:5px;
+    color: rgb(2, 27, 48);
+    background: #dee4e0;
+
+}
+
+.pais img {
+    
+    width: 100%;
+}
